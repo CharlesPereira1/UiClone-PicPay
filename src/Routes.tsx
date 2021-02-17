@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Wallet from "./pages/Wallet";
 import Pay from "./pages/Pay";
 
+import PayButton from "./components/PayButton";
+
 const Tab = createBottomTabNavigator();
 
 const icons = {
@@ -16,10 +18,6 @@ const icons = {
   Wallet: {
     lib: AntDesign,
     name: "creditcard",
-  },
-  Pay: {
-    lib: AntDesign,
-    name: "home",
   },
   Notifications: {
     lib: Ionicons,
@@ -35,6 +33,10 @@ const Routes: React.FC = () => (
   <Tab.Navigator
     screenOptions={({ route }) => ({
       tabBarIcon: ({ color, size }) => {
+        if (route.name === "Pay") {
+          return <PayButton />;
+        }
+
         const { lib: Icon, name } = icons[route.name];
         return <Icon name={name} size={size} color={color} />;
       },
@@ -54,7 +56,7 @@ const Routes: React.FC = () => (
       options={{ title: "Carteira" }}
       component={Wallet}
     />
-    <Tab.Screen name="Pay" options={{ title: "Pagar" }} component={Pay} />
+    <Tab.Screen name="Pay" options={{ title: "" }} component={Pay} />
     <Tab.Screen
       name="Notifications"
       options={{ title: "Notificações" }}
