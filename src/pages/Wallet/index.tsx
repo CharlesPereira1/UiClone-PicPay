@@ -4,12 +4,12 @@ import { Text, View as Container } from "react-native";
 
 // import { Container } from "./styles";
 
-const Home: React.FC = () => {
+const Wallet: React.FC = () => {
   return (
     <Container>
-      <Text>Home</Text>
+      <Text>Wallet</Text>
     </Container>
   );
 };
 
-export default Home;
+export default Wallet;
