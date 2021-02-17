@@ -31,10 +31,15 @@ const icons = {
 
 const Routes: React.FC = () => (
   <Tab.Navigator
-    screenOptions={({ route }) => ({
-      tabBarIcon: ({ color, size }) => {
+    screenOptions={({ route, navigation }) => ({
+      tabBarIcon: ({ color, size, focused }) => {
         if (route.name === "Pay") {
-          return <PayButton />;
+          return (
+            <PayButton
+              onPress={() => navigation.navigate("Pay")}
+              focused={focused}
+            />
+          );
         }
 
         const { lib: Icon, name } = icons[route.name];
