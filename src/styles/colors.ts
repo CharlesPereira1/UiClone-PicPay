@@ -3,6 +3,7 @@ export default {
   whiteRgba: "rgba(255,255,255,0)",
   whiteRgbaClear: "rgba(255,255,255,0.8)",
   black: "#000",
+  blackPeal: "#1E222B",
   blackRussian: "#131418",
   grey: "#CCC",
   springGreen: "#00fc6c",

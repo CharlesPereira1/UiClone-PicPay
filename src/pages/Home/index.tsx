@@ -11,6 +11,7 @@ import {
   BalanceTitle,
   Balance,
 } from "./styles";
+import Sugestions from "../../components/Sugestions";
 
 const Home: React.FC = () => {
   return (
@@ -34,6 +35,8 @@ const Home: React.FC = () => {
             color={colors.malachite}
           />
         </Header>
+
+        <Sugestions />
       </Container>
     </Wrapper>
   );
