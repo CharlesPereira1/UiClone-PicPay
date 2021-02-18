@@ -1,13 +1,40 @@
 import React from "react";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import { Text } from "react-native";
+import colors from "../../styles/colors";
 
-import { Wrapper } from "./styles";
+import {
+  Wrapper,
+  Container,
+  Header,
+  BalanceContainer,
+  BalanceTitle,
+  Balance,
+} from "./styles";
 
 const Home: React.FC = () => {
   return (
     <Wrapper>
-      <Text>Home</Text>
+      <Container>
+        <Header>
+          <MaterialCommunityIcons
+            name="qrcode-scan"
+            size={30}
+            color={colors.malachite}
+          />
+
+          <BalanceContainer>
+            <BalanceTitle>Meu saldo</BalanceTitle>
+            <Balance>R$ 0,00</Balance>
+          </BalanceContainer>
+
+          <MaterialCommunityIcons
+            name="gift"
+            size={30}
+            color={colors.malachite}
+          />
+        </Header>
+      </Container>
     </Wrapper>
   );
 };
