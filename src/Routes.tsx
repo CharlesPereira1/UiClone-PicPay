@@ -8,6 +8,8 @@ import Pay from "./pages/Pay";
 
 import PayButton from "./components/PayButton";
 
+import colors from "./styles/colors";
+
 const Tab = createBottomTabNavigator();
 
 const icons = {
@@ -48,11 +50,11 @@ const Routes: React.FC = () => (
     })}
     tabBarOptions={{
       style: {
-        backgroundColor: "#131418",
-        borderTopColor: "rgba(255,255,255,0)",
+        backgroundColor: colors.blackRussian,
+        borderTopColor: colors.whiteRgba,
       },
-      activeTintColor: "#fff",
-      inactiveTintColor: "#92929c",
+      activeTintColor: colors.white,
+      inactiveTintColor: colors.greySuit,
     }}
   >
     <Tab.Screen name="Home" options={{ title: "Início" }} component={Home} />

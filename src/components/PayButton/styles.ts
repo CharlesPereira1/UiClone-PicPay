@@ -1,6 +1,8 @@
 import styled from "styled-components/native";
 import { LinearGradient } from "expo-linear-gradient";
 
+import colors from "../../styles/colors";
+
 interface Props {
   focused: boolean;
 }
@@ -14,6 +16,6 @@ export const Button = styled(LinearGradient)`
 `;
 
 export const Label = styled.Text<Props>`
-  color: ${({ focused }) => (focused ? "#000" : "#fff")};
+  color: ${({ focused }) => (focused ? colors.black : colors.white)};
   font-size: 12px;
 `;
