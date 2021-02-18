@@ -1,3 +1,7 @@
 import styled from "styled-components/native";
+import colors from "../../styles/colors";
 
-export const Container = styled.View``;
+export const Wrapper = styled.View`
+  flex: 1;
+  background: ${colors.black};
+`;

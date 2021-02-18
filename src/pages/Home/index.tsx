@@ -1,14 +1,14 @@
 import React from "react";
 
-import { Text, View as Container } from "react-native";
+import { Text } from "react-native";
 
-// import { Container } from "./styles";
+import { Wrapper } from "./styles";
 
 const Home: React.FC = () => {
   return (
-    <Container>
+    <Wrapper>
       <Text>Home</Text>
-    </Container>
+    </Wrapper>
   );
 };
 
