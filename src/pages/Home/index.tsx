@@ -1,6 +1,9 @@
 import React from "react";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
+import Sugestions from "../../components/Sugestions";
+import Activities from "../../components/Activities";
+
 import colors from "../../styles/colors";
 
 import {
@@ -11,7 +14,6 @@ import {
   BalanceTitle,
   Balance,
 } from "./styles";
-import Sugestions from "../../components/Sugestions";
 
 const Home: React.FC = () => {
   return (
@@ -37,6 +39,7 @@ const Home: React.FC = () => {
         </Header>
 
         <Sugestions />
+        <Activities />
       </Container>
     </Wrapper>
   );

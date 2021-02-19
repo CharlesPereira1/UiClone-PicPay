@@ -2,6 +2,7 @@ export default {
   white: "#FFF",
   whiteRgba: "rgba(255,255,255,0)",
   whiteRgbaClear: "rgba(255,255,255,0.8)",
+  divider: "rgba(255,255,255,0.4)",
   black: "#000",
   blackPeal: "#1E222B",
   blackRussian: "#131418",
@@ -10,4 +11,5 @@ export default {
   pigmentGreen: "#00ac4a",
   malachite: "#10c86e",
   greySuit: "#92929c",
+  frenchRose: "#f75175",
 };

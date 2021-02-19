@@ -3,6 +3,7 @@ import colors from "../../styles/colors";
 
 export const Container = styled.ScrollView.attrs(() => ({
   horizontal: true,
+  showsHorizontalScrollIndicator: false,
   contentContainerStyle: {
     alignItems: "center",
     paddingLeft: 16,
