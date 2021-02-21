@@ -12,4 +12,10 @@ export default {
   malachite: "#10c86e",
   greySuit: "#92929c",
   frenchRose: "#f75175",
+
+  img8: "#172c4a",
+  img9: "#6a0159",
+  img10: "#4139c8",
+  img11: "#00ab4b",
+  img12: "#ba2f76",
 };
