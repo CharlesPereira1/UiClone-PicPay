@@ -21,6 +21,7 @@ export const Option = styled.TouchableOpacity<ContainerProps>`
   height: 230px;
   border-radius: 8px;
   padding: 15px;
+  margin-right: 16px;
   justify-content: space-between;
 `;
 
