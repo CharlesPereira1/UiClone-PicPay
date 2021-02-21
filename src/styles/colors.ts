@@ -12,6 +12,7 @@ export default {
   malachite: "#10c86e",
   greySuit: "#92929c",
   frenchRose: "#f75175",
+  banner: "#6882bb",
 
   img8: "#172c4a",
   img9: "#6a0159",

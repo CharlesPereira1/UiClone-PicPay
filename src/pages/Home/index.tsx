@@ -15,6 +15,7 @@ import {
   BalanceTitle,
   Balance,
 } from "./styles";
+import Banner from "../../components/Banner";
 
 const Home: React.FC = () => {
   return (
@@ -44,6 +45,8 @@ const Home: React.FC = () => {
         <Activities />
 
         <Tips />
+
+        <Banner />
       </Container>
     </Wrapper>
   );
