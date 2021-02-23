@@ -1,13 +1,17 @@
 import React from "react";
 
-import { Text, View as Container } from "react-native";
+import colors from "../../styles/colors";
 
-// import { Container } from "./styles";
+import { Container, Header, HeaderContainer, Title } from "./styles";
 
 const Wallet: React.FC = () => {
   return (
     <Container>
-      <Text>Wallet</Text>
+      <Header colors={[colors.pastelGreen, colors.mountainMeadow]}>
+        <HeaderContainer>
+          <Title>Saldo PicPay</Title>
+        </HeaderContainer>
+      </Header>
     </Container>
   );
 };

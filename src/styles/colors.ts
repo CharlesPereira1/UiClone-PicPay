@@ -9,6 +9,8 @@ export default {
   grey: "#CCC",
   springGreen: "#00fc6c",
   pigmentGreen: "#00ac4a",
+  pastelGreen: "#52E78C",
+  mountainMeadow: "#1AB563",
   malachite: "#10c86e",
   greySuit: "#92929c",
   frenchRose: "#f75175",
