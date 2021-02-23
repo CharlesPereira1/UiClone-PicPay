@@ -2,13 +2,13 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { AntDesign, Ionicons } from "@expo/vector-icons";
 
-import Home from "./pages/Home";
-import Wallet from "./pages/Wallet";
-import Pay from "./pages/Pay";
+import Home from "../pages/Home";
+import Wallet from "../pages/Wallet";
+import Pay from "../pages/Pay";
 
-import PayButton from "./components/PayButton";
+import PayButton from "../components/PayButton";
 
-import colors from "./styles/colors";
+import colors from "../styles/colors";
 
 const Tab = createBottomTabNavigator();
 
