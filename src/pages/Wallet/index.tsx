@@ -1,5 +1,9 @@
 import React from "react";
-import { Feather } from "@expo/vector-icons";
+import {
+  Feather,
+  MaterialCommunityIcons,
+  FontAwesome,
+} from "@expo/vector-icons";
 
 import colors from "../../styles/colors";
 
@@ -13,6 +17,9 @@ import {
   Bold,
   EyesContent,
   Info,
+  Actions,
+  Action,
+  ActionLabel,
 } from "./styles";
 
 const Wallet: React.FC = () => {
@@ -33,6 +40,21 @@ const Wallet: React.FC = () => {
           </BalanceContainer>
 
           <Info>Seu saldo está rendendo 100% do CDI.</Info>
+
+          <Actions>
+            <Action>
+              <MaterialCommunityIcons
+                name="cash"
+                size={25}
+                color={colors.white}
+              />
+              <ActionLabel>Adicionar</ActionLabel>
+            </Action>
+            <Action>
+              <FontAwesome name="bank" size={18} color={colors.white} />
+              <ActionLabel>Retirar</ActionLabel>
+            </Action>
+          </Actions>
         </HeaderContainer>
       </Header>
     </Container>
