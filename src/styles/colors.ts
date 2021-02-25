@@ -16,6 +16,8 @@ export default {
   frenchRose: "#f75175",
   banner: "#6882bb",
   balance: "#1C1C1E",
+  payment: "#8e8e93",
+  card: "#1e232a",
 
   img8: "#172c4a",
   img9: "#6a0159",

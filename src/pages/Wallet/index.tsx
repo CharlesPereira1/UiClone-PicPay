@@ -6,6 +6,8 @@ import {
   FontAwesome,
 } from "@expo/vector-icons";
 
+import creditCard from "../../assets/images/credit-card.png";
+
 import colors from "../../styles/colors";
 
 import {
@@ -23,6 +25,12 @@ import {
   ActionLabel,
   UseBalance,
   UseBalanceTitle,
+  PaymentMethods,
+  PaymentMethodsTitle,
+  Card,
+  CardDetails,
+  CardTitle,
+  CardInfo,
 } from "./styles";
 
 const Wallet: React.FC = () => {
@@ -66,6 +74,20 @@ const Wallet: React.FC = () => {
 
         <Switch />
       </UseBalance>
+
+      <PaymentMethods>
+        <PaymentMethodsTitle>formas de pagamento</PaymentMethodsTitle>
+
+        <Card>
+          <CardDetails>
+            <CardTitle>Cadastre seu cartão de creditos</CardTitle>
+            <CardInfo>
+              Cadastre seu cartão de crédito para poder fazer pagamentos mesmo
+              quando não tiver saldo no seu PicPay
+            </CardInfo>
+          </CardDetails>
+        </Card>
+      </PaymentMethods>
     </Container>
   );
 };

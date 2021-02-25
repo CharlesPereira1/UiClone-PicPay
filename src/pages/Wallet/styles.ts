@@ -91,3 +91,34 @@ export const UseBalanceTitle = styled.Text`
   font-size: 16px;
   font-weight: 500;
 `;
+
+export const PaymentMethods = styled.View`
+  margin-top: 25px;
+  padding: 0 16px;
+`;
+
+export const PaymentMethodsTitle = styled.Text`
+  color: ${colors.payment};
+  text-transform: uppercase;
+`;
+
+export const Card = styled.View`
+  background: ${colors.card};
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px;
+`;
+
+export const CardDetails = styled.View``;
+
+export const CardTitle = styled.Text`
+  font-size: 18px;
+  font-weight: bold;
+  color: ${colors.white};
+`;
+
+export const CardInfo = styled.Text`
+  font-size: 16px;
+  margin-top: 15px;
+  color: ${colors.whiteRgbaClear};
+`;
