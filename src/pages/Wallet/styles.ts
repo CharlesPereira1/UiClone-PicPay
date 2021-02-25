@@ -76,3 +76,18 @@ export const ActionLabel = styled.Text`
   color: ${colors.white};
   margin-left: 10px;
 `;
+
+export const UseBalance = styled.View`
+  background: ${colors.balance};
+  height: 60px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 16px;
+  justify-content: space-between;
+`;
+
+export const UseBalanceTitle = styled.Text`
+  color: ${colors.white};
+  font-size: 16px;
+  font-weight: 500;
+`;

@@ -15,6 +15,7 @@ export default {
   greySuit: "#92929c",
   frenchRose: "#f75175",
   banner: "#6882bb",
+  balance: "#1C1C1E",
 
   img8: "#172c4a",
   img9: "#6a0159",

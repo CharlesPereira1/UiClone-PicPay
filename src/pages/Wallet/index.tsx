@@ -1,4 +1,5 @@
 import React from "react";
+import { Switch } from "react-native";
 import {
   Feather,
   MaterialCommunityIcons,
@@ -20,6 +21,8 @@ import {
   Actions,
   Action,
   ActionLabel,
+  UseBalance,
+  UseBalanceTitle,
 } from "./styles";
 
 const Wallet: React.FC = () => {
@@ -57,6 +60,12 @@ const Wallet: React.FC = () => {
           </Actions>
         </HeaderContainer>
       </Header>
+
+      <UseBalance>
+        <UseBalanceTitle>Usar saldo ao pagar</UseBalanceTitle>
+
+        <Switch />
+      </UseBalance>
     </Container>
   );
 };
