@@ -31,6 +31,7 @@ import {
   CardDetails,
   CardTitle,
   CardInfo,
+  Img,
 } from "./styles";
 
 const Wallet: React.FC = () => {
@@ -86,6 +87,8 @@ const Wallet: React.FC = () => {
               quando não tiver saldo no seu PicPay
             </CardInfo>
           </CardDetails>
+
+          <Img resizeMode="contain" source={creditCard} />
         </Card>
       </PaymentMethods>
     </Container>

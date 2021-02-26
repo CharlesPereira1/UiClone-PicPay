@@ -107,9 +107,13 @@ export const Card = styled.View`
   padding: 20px;
   border-radius: 8px;
   margin-top: 10px;
+  flex-direction: row;
 `;
 
-export const CardDetails = styled.View``;
+export const CardDetails = styled.View`
+  flex: 1;
+  margin-right: 10px;
+`;
 
 export const CardTitle = styled.Text`
   font-size: 18px;
@@ -118,7 +122,11 @@ export const CardTitle = styled.Text`
 `;
 
 export const CardInfo = styled.Text`
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 15px;
   color: ${colors.whiteRgbaClear};
+`;
+
+export const Img = styled.Image`
+  width: 60px;
 `;
