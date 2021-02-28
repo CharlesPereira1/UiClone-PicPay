@@ -134,3 +134,16 @@ export const CardInfo = styled.Text`
 export const Img = styled.Image`
   width: 60px;
 `;
+
+export const AddButton = styled.TouchableOpacity`
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const AddLabel = styled.Text`
+  color: ${colors.malachiteTwo};
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+`;

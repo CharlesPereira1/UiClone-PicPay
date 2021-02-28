@@ -34,6 +34,8 @@ import {
   CardTitle,
   CardInfo,
   Img,
+  AddButton,
+  AddLabel,
 } from "./styles";
 
 const Wallet: React.FC = () => {
@@ -93,7 +95,15 @@ const Wallet: React.FC = () => {
 
             <Img resizeMode="contain" source={creditCard} />
           </BodyCard>
-          <AntDesign name="pluscircleo" size={30} color={colors.malachiteTwo} />
+
+          <AddButton>
+            <AntDesign
+              name="pluscircleo"
+              size={30}
+              color={colors.malachiteTwo}
+            />
+            <AddLabel>Adicionar cartão de crédito</AddLabel>
+          </AddButton>
         </Card>
       </PaymentMethods>
     </Container>
