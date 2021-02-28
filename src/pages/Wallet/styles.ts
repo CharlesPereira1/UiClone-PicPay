@@ -104,8 +104,12 @@ export const PaymentMethodsTitle = styled.Text`
 
 export const Card = styled.View`
   background: ${colors.card};
-  padding: 20px;
   border-radius: 8px;
+  padding: 20px;
+  flex-direction: column;
+`;
+
+export const BodyCard = styled.View`
   margin-top: 10px;
   flex-direction: row;
 `;

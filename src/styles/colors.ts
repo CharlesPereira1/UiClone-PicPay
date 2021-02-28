@@ -12,6 +12,7 @@ export default {
   pastelGreen: "#52E78C",
   mountainMeadow: "#1AB563",
   malachite: "#10c86e",
+  malachiteTwo: "#0DB060",
   greySuit: "#92929c",
   frenchRose: "#f75175",
   banner: "#6882bb",

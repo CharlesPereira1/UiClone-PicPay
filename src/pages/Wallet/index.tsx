@@ -4,6 +4,7 @@ import {
   Feather,
   MaterialCommunityIcons,
   FontAwesome,
+  AntDesign,
 } from "@expo/vector-icons";
 
 import creditCard from "../../assets/images/credit-card.png";
@@ -28,6 +29,7 @@ import {
   PaymentMethods,
   PaymentMethodsTitle,
   Card,
+  BodyCard,
   CardDetails,
   CardTitle,
   CardInfo,
@@ -80,15 +82,18 @@ const Wallet: React.FC = () => {
         <PaymentMethodsTitle>formas de pagamento</PaymentMethodsTitle>
 
         <Card>
-          <CardDetails>
-            <CardTitle>Cadastre seu cartão de creditos</CardTitle>
-            <CardInfo>
-              Cadastre seu cartão de crédito para poder fazer pagamentos mesmo
-              quando não tiver saldo no seu PicPay
-            </CardInfo>
-          </CardDetails>
+          <BodyCard>
+            <CardDetails>
+              <CardTitle>Cadastre seu cartão de creditos</CardTitle>
+              <CardInfo>
+                Cadastre seu cartão de crédito para poder fazer pagamentos mesmo
+                quando não tiver saldo no seu PicPay
+              </CardInfo>
+            </CardDetails>
 
-          <Img resizeMode="contain" source={creditCard} />
+            <Img resizeMode="contain" source={creditCard} />
+          </BodyCard>
+          <AntDesign name="pluscircleo" size={30} color={colors.malachiteTwo} />
         </Card>
       </PaymentMethods>
     </Container>
