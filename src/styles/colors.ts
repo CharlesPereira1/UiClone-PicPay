@@ -19,6 +19,8 @@ export default {
   balance: "#1C1C1E",
   payment: "#8e8e93",
   card: "#1e232a",
+  lightGrey: "#D3D3D3",
+  greyTwo: "#868686",
 
   img8: "#172c4a",
   img9: "#6a0159",

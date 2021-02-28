@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch } from "react-native";
 import {
   Feather,
@@ -41,19 +41,40 @@ import {
 } from "./styles";
 
 const Wallet: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [useBalance, setUseBalance] = useState(true);
+
+  const handleVisible = () => {
+    setIsVisible((prev) => !prev);
+  };
+
+  const handleBalance = () => {
+    setUseBalance((prev) => !prev);
+  };
+
   return (
     <Container>
-      <Header colors={[colors.pastelGreen, colors.mountainMeadow]}>
+      <Header
+        colors={
+          useBalance
+            ? [colors.pastelGreen, colors.mountainMeadow]
+            : [colors.lightGrey, colors.greyTwo]
+        }
+      >
         <HeaderContainer>
           <Title>Saldo PicPay</Title>
 
           <BalanceContainer>
             <Value>
-              R$ <Bold>159,90</Bold>
+              R$ <Bold>{isVisible ? "159,90" : "-----"}</Bold>
             </Value>
 
-            <EyesContent>
-              <Feather name="eye" size={28} color={colors.white} />
+            <EyesContent onPress={handleVisible}>
+              <Feather
+                name={isVisible ? "eye" : "eye-off"}
+                size={28}
+                color={colors.white}
+              />
             </EyesContent>
           </BalanceContainer>
 
@@ -79,7 +100,7 @@ const Wallet: React.FC = () => {
       <UseBalance>
         <UseBalanceTitle>Usar saldo ao pagar</UseBalanceTitle>
 
-        <Switch />
+        <Switch value={useBalance} onValueChange={handleBalance} />
       </UseBalance>
 
       <PaymentMethods>
