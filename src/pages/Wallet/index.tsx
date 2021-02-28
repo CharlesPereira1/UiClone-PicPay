@@ -36,6 +36,8 @@ import {
   Img,
   AddButton,
   AddLabel,
+  TicketButton,
+  TicketLabel,
 } from "./styles";
 
 const Wallet: React.FC = () => {
@@ -105,6 +107,16 @@ const Wallet: React.FC = () => {
             <AddLabel>Adicionar cartão de crédito</AddLabel>
           </AddButton>
         </Card>
+
+        <TicketButton>
+          <MaterialCommunityIcons
+            name="ticket-outline"
+            size={20}
+            color={colors.malachiteTwo}
+          />
+
+          <TicketLabel>Usar código promocional</TicketLabel>
+        </TicketButton>
       </PaymentMethods>
     </Container>
   );

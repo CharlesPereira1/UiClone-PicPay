@@ -147,3 +147,18 @@ export const AddLabel = styled.Text`
   font-size: 18px;
   margin-left: 10px;
 `;
+
+export const TicketButton = styled.TouchableOpacity`
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const TicketLabel = styled.Text`
+  color: ${colors.malachiteTwo};
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+  text-decoration-line: underline;
+`;
